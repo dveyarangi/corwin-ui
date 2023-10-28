@@ -1,0 +1,82 @@
+{
+    "global": {
+        "rootOrientationVertical": true,
+        "tabEnableClose": false,
+        "tabSetEnableMaximize": false,
+        "splitterSize": 1,
+        "splitterExtra": 5,
+        "tabSetAutoSelectTab": false
+    },
+    "borders": [],
+    "layout": {
+        "type": "row",
+        "weight": 100,
+        "children": [
+            {
+                "type": "row",
+                "weight": 65,
+                "children": [
+                    {
+                        "type": "tabset",
+                        "weight": 16,
+                        "children": [
+                            {
+                                "type": "tab",
+                                "name": "Navigation",
+                                "component": "explorerPanel"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "tabset",
+                        "weight": 42,
+                        "children": [
+                            {
+                                "type": "tab",
+                                "name": "Task",
+                                "component": "taskPanel"
+                            },
+                            {
+                                "type": "tab",
+                                "name": "Tests",
+                                "component": "testPanel"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "tabset",
+                        "weight": 42,
+                        "children": [
+                            {
+                                "type": "tab",
+                                "name": "Function",
+                                "component": "functionPanel"
+                            },
+                            {
+                                "type": "tab",
+                                "name": "Imports",
+                                "component": "importsPanel"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "row",
+                "weight": 35,
+                "children": [
+                    {
+                        "type": "tabset",
+                        "children": [
+                            {
+                                "type": "tab",
+                                "name": "Console",
+                                "component": "consolePanel"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
