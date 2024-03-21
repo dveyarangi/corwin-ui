@@ -7,12 +7,12 @@ type TextEditorProps = {
     tag: string;
   };
 
-export const TextEditor:FC<TextEditorProps> = ({tag}) =>{
+export const TextEditor:FC<TextEditorProps> = ({tag}) => {
 
     const [_, setText] = useRecoilState(getState(tag));
 
     const onChange = (event:any) => {
-      setText(event.target.value);
+       setText(event.target.value);
     };
 
 

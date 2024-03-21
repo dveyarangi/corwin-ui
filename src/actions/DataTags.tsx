@@ -1,24 +1,14 @@
 import { atom, RecoilState } from 'recoil';
 
 
-export const taskState = atom({ key: 'taskState', default: ''})
-
-export const codeState =  atom({ key: 'codeState', default: ''})
-export const testState =  atom({ key: 'testState', default: ''})
-export const importsState =  atom({ key: 'importsState', default: ''})
-
-export const statusState =  atom<string | undefined>({ key: 'statusState', default: ''})
-export const consoleState =  atom({ key: 'consoleState', default: {}})
+export const chatState = atom({ key: 'chatState', default: ''})
+export const consoleState = atom({ key: 'consoleState', default: ''})
+export const statusState = atom({ key: 'statusState', default: ''})
 
 var atoms: { [key: string]: RecoilState<any> } = {
-
-    taskState: taskState,
-    codeState: codeState,
-    testState: testState,
-    importsState: importsState,
-    statusState: statusState,
+    chatState: chatState,
     consoleState: consoleState,
-
+    statusState: statusState,
 };
 
 export const getState = (tag:string):RecoilState<any> => {

@@ -1,4 +1,4 @@
-import { GenerateCodeButton } from '../actions/GenerateCode';
+import { SendMesageButton } from '../actions/SendMessage';
 
 
 import './ToolBar.css'
@@ -7,7 +7,7 @@ export const ToolBar = () => {
 
     return (
         <div className="toolbar">
-            <GenerateCodeButton />
+            <SendMesageButton />
         </div>
       );
 } 
